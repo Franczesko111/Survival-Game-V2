@@ -1,5 +1,5 @@
 #include <raylib.h>
-#include "game.h"
+#include "game.hpp
 
 void Game::Draw()
 {

@@ -1,5 +1,5 @@
 #include <raylib.h>
-#include "player.h"
+#include "player.hpp"
 
 #define PLAYER_WIDTH 9
 #define PLAYER_HEIGHT 13

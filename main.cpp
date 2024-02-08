@@ -1,5 +1,5 @@
 #include <raylib.h>
-#include "game.h"
+#include "game.hpp"
 
 //Configuration variables
 const int SCREEN_WIDTH = 1024;
