@@ -1,4 +1,20 @@
 # depslib dependency file v1.0
-1707384652 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
+1707386621 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
 	<raylib.h>
+	"game.h"
+
+1707388229 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.h
+	<raylib.h>
+
+1707388272 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.cpp
+	<raylib.h>
+	"player.h"
+
+1707386607 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.cpp
+	<raylib.h>
+	"game.h"
+
+1707386578 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.h
+	<raylib.h>
+	"player.h"
 
