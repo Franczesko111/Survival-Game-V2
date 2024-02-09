@@ -8,21 +8,21 @@ Player::Player()
 {
     scale = 6;
     speed = 5;
-    x = GetScreenWidth() / 2;
-    y = GetScreenHeight() / 2;
+    x = GetScreenWidth() / 2 + 128;
+    y = GetScreenHeight() / 2 + 128;
 
-    texture = LoadTexture("Images/player.png");
+    spritesheet.texture = LoadTexture("Images/player.png");
     rotation = 0;
 }
 
 Player::~Player()
 {
-    UnloadTexture(texture);
+    UnloadTexture(spritesheet.texture);
 }
 
 void Player::Draw()
 {
-    DrawTexturePro(texture, source, dest, origin, rotation, WHITE);
+    DrawTexturePro(spritesheet.texture, spritesheet.source, spritesheet.dest, spritesheet.origin, rotation, WHITE);
 }
 
 void Player::Update()
@@ -34,9 +34,9 @@ void Player::Update()
     y += input_y * speed;
 
     //Update Properties
-    source = Rectangle{frame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
-    dest = Rectangle{x, y, source.width * scale, source.height * scale};
-    origin = Vector2{dest.width / 2, dest.height / 2};
+    spritesheet.source = Rectangle{frame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
+    spritesheet.dest = Rectangle{x, y, spritesheet.source.width * scale, spritesheet.source.height * scale};
+    spritesheet.origin = Vector2{spritesheet.dest.width / 2, spritesheet.dest.height / 2};
 
     //Animation Handler
     if(input_x != 0 || input_y != 0)
@@ -60,3 +60,5 @@ void Player::Animation(float timeleft, int startframe, int endframe)
         if(frame == endframe) frame = startframe;
     }
 }
+
+Vector2 Player::GetPlayerPosition() {return Vector2{x, y};}
