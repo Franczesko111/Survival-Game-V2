@@ -27,8 +27,10 @@
 			<Add library="winmm" />
 		</Linker>
 		<Unit filename="Images/player.png" />
+		<Unit filename="Images/tiles.png" />
 		<Unit filename="game.cpp" />
 		<Unit filename="game.hpp" />
+		<Unit filename="game_data.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="player.cpp" />
 		<Unit filename="player.hpp" />

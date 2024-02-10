@@ -5,7 +5,7 @@
 const int SCREEN_WIDTH = 1024;
 const int SCREEN_HEIGHT = 960;
 const int GAME_FPS = 60;
-const char* GAME_TITLE = "Survival Game Test - V2";
+const char* GAME_TITLE = "Survival Game Test - V2 - INFINITE TERRAIN";
 
 int main()
 {

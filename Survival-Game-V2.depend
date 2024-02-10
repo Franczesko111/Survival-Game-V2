@@ -1,16 +1,18 @@
 # depslib dependency file v1.0
-1707414686 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
+1707475298 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
 	<raylib.h>
 	"game.hpp"
 
 1707388229 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.h
 	<raylib.h>
 
-1707418399 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.cpp
+1707560222 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.cpp
+	<iostream>
 	<raylib.h>
 	"player.hpp"
 
-1707469242 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.cpp
+1707559602 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.cpp
+	<iostream>
 	<raylib.h>
 	"game.hpp"
 
@@ -18,19 +20,28 @@
 	<raylib.h>
 	"player.h"
 
-1707468273 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.hpp
+1707559529 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.hpp
 	<raylib.h>
 	"player.hpp"
 	"tiles.hpp"
+	"data.hpp"
 
-1707416626 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.hpp
+1707559746 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.hpp
 	<raylib.h>
+	"data.hpp"
 
-1707469686 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.hpp
+1707559693 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.hpp
 	<raylib.h>
+	"data.hpp"
 
-1707468908 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.cpp
+1707560259 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.cpp
 	<iostream>
 	<raylib.h>
 	"tiles.hpp"
+
+1707477615 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game_data.hpp
+	<raylib.h>
+
+1707558904 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\data.hpp
+	<raylib.h>
 

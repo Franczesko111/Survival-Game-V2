@@ -1,16 +1,18 @@
+//INFINITE TERRAIN
+#include <iostream>
 #include <raylib.h>
 #include "player.hpp"
-
-#define PLAYER_WIDTH 9
-#define PLAYER_HEIGHT 13
+using namespace std;
 
 Player::Player()
 {
+    //Setup player properites
+    bounds_limit_x = ((MAP_SIZE_X - 16) * 64) + 1024 - (PLAYER_WIDTH * scale) / 2;
+    bounds_limit_y = ((MAP_SIZE_Y - 15) * 64) + 960 - (PLAYER_HEIGHT * scale) / 2;
     scale = 6;
     speed = 5;
-    x = GetScreenWidth() / 2 + 128;
-    y = GetScreenHeight() / 2 + 128;
-
+    x = GetScreenWidth() / 2;
+    y = GetScreenHeight() / 2;
     spritesheet.texture = LoadTexture("Images/player.png");
     rotation = 0;
 }
@@ -32,6 +34,12 @@ void Player::Update()
     input_y = IsKeyDown(KEY_S) - IsKeyDown(KEY_W);
     x += input_x * speed;
     y += input_y * speed;
+
+    //Player off-screen check
+    if(x < (PLAYER_WIDTH * scale) / 2) x = (PLAYER_WIDTH * scale) / 2;
+    if(x > bounds_limit_x) x = bounds_limit_x;
+    if(y < (PLAYER_HEIGHT * scale) / 2) y = (PLAYER_HEIGHT * scale) / 2;
+    if(y > bounds_limit_y) y = bounds_limit_y;
 
     //Update Properties
     spritesheet.source = Rectangle{frame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
