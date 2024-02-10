@@ -1,8 +1,6 @@
-//INFINITE TERRAIN
 #include <iostream>
 #include <raylib.h>
 #include "game.hpp"
-using namespace std;
 
 Game::Game()
 {

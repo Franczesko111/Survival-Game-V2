@@ -1,8 +1,6 @@
-//INFINITE TERRAIN
 #include <iostream>
 #include <raylib.h>
 #include "tiles.hpp"
-using namespace std;
 
 Tile::Tile()
 {

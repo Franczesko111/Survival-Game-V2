@@ -1,16 +1,13 @@
-//INFINITE TERRAIN
-#include <iostream>
 #include <raylib.h>
 #include "player.hpp"
-using namespace std;
 
 Player::Player()
 {
     //Setup player properites
-    bounds_limit_x = ((MAP_SIZE_X - 16) * 64) + 1024 - (PLAYER_WIDTH * scale) / 2;
-    bounds_limit_y = ((MAP_SIZE_Y - 15) * 64) + 960 - (PLAYER_HEIGHT * scale) / 2;
     scale = 6;
     speed = 5;
+    bounds_limit_x = ((MAP_SIZE_X - 16) * 64) + 1024 - (PLAYER_WIDTH * scale) / 2;
+    bounds_limit_y = ((MAP_SIZE_Y - 15) * 64) + 960 - (PLAYER_HEIGHT * scale) / 2;
     x = GetScreenWidth() / 2;
     y = GetScreenHeight() / 2;
     spritesheet.texture = LoadTexture("Images/player.png");
@@ -42,7 +39,7 @@ void Player::Update()
     if(y > bounds_limit_y) y = bounds_limit_y;
 
     //Update Properties
-    spritesheet.source = Rectangle{frame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
+    spritesheet.source = Rectangle{(float)frame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
     spritesheet.dest = Rectangle{x, y, spritesheet.source.width * scale, spritesheet.source.height * scale};
     spritesheet.origin = Vector2{spritesheet.dest.width / 2, spritesheet.dest.height / 2};
 

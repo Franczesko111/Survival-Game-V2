@@ -1,4 +1,3 @@
-//INFINITE TERRAIN
 #pragma once
 #include <raylib.h>
 #include "data.hpp"
