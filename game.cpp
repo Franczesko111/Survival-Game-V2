@@ -35,8 +35,7 @@ void Game::Draw()
 
     EndMode2D();
 
-    DrawText(TextFormat("Camera Zoom: %.2f", camera.zoom), 0, 20, 20, BLACK);
-    DrawText("Zoom In (E), Zoom Out (Q)", 0, 40, 20, GRAY);
+    inventory.Draw();
 }
 
 void Game::Update()
@@ -45,11 +44,6 @@ void Game::Update()
     player.Update();
     camera.target = player.GetPlayerPosition();
     UpdateCameraOutOfBounds();
-
-    if(IsKeyDown(KEY_E)) camera.zoom += 0.01;
-    if(camera.zoom > 1.5) camera.zoom = 1.5;
-    if(IsKeyDown(KEY_Q)) camera.zoom -= 0.01;
-    if(camera.zoom < 0.5) camera.zoom = 0.5;
 }
 
 void Game::UpdateCameraOutOfBounds()

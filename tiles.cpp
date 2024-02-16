@@ -1,4 +1,3 @@
-#include <iostream>
 #include <raylib.h>
 #include "tiles.hpp"
 
@@ -25,15 +24,15 @@ void Tile::Draw(int id)
     SpritesheetUpdate(fixed_pos);
 
     DrawTexturePro(spritesheet.texture, spritesheet.source, spritesheet.dest, spritesheet.origin, 0, WHITE);
-    DrawText(TextFormat("%d", id_x), fixed_pos.x - (scale / 2) * 16, fixed_pos.y - (scale / 2) * 16, 30, RED);
-    DrawText(TextFormat("%d", id_y), fixed_pos.x - (scale / 2) * 16, fixed_pos.y, 30, BLUE);
+    //DrawText(TextFormat("%d", id_x), fixed_pos.x - (scale / 2) * 16, fixed_pos.y - (scale / 2) * 16, 30, RED);
+    //DrawText(TextFormat("%d", id_y), fixed_pos.x - (scale / 2) * 16, fixed_pos.y, 30, BLUE);
 }
 
 void Tile::Update(int id, Vector2 camera)
 {
     fixed_pos = GetFixedTilePosition(id);
 
-    if(camera.x - fixed_pos.x > 736 && tile_data.clone_x[id] + 20 < MAP_SIZE_X) tile_data.clone_x[id] += 20;
+    if(camera.x - fixed_pos.x > 736) tile_data.clone_x[id] += 20;
     if(camera.x - fixed_pos.x < -736) tile_data.clone_x[id] -= 20;
     if(camera.y - fixed_pos.y > 704) tile_data.clone_y[id] += 19;
     if(camera.y - fixed_pos.y < -704) tile_data.clone_y[id] -= 19;

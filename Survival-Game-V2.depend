@@ -1,17 +1,16 @@
 # depslib dependency file v1.0
-1707475298 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
+1707753927 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\main.cpp
 	<raylib.h>
 	"game.hpp"
 
 1707388229 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.h
 	<raylib.h>
 
-1707560222 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.cpp
-	<iostream>
+1707562829 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.cpp
 	<raylib.h>
 	"player.hpp"
 
-1707559602 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.cpp
+1707753292 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.cpp
 	<iostream>
 	<raylib.h>
 	"game.hpp"
@@ -20,28 +19,37 @@
 	<raylib.h>
 	"player.h"
 
-1707559529 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.hpp
+1707753280 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game.hpp
 	<raylib.h>
 	"player.hpp"
 	"tiles.hpp"
 	"data.hpp"
+	"inventory.hpp"
 
-1707559746 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.hpp
+1707562782 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\player.hpp
 	<raylib.h>
 	"data.hpp"
 
-1707559693 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.hpp
+1707754756 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.hpp
 	<raylib.h>
 	"data.hpp"
 
-1707560259 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.cpp
-	<iostream>
+1707753914 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\tiles.cpp
 	<raylib.h>
 	"tiles.hpp"
 
 1707477615 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\game_data.hpp
 	<raylib.h>
 
-1707558904 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\data.hpp
+1707755201 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\data.hpp
 	<raylib.h>
+
+1707754765 c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\inventory.hpp
+	<raylib.h>
+	"data.hpp"
+
+1707755157 source:c:\users\franc\onedrive\dokumenty\raylib\survival-game-v2\inventory.cpp
+	<iostream>
+	<raylib.h>
+	"inventory.hpp"
 

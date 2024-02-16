@@ -36,7 +36,7 @@ class Tile
         MAP_DATA map_data[MAP_SIZE_Y];
 
     private:
-        float x, y, width, height;
+        float x, y;
         int scale;
 
         Vector2 fixed_pos;
